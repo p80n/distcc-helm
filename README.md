@@ -8,7 +8,9 @@ distcc -- a free distributed C/C++ compiler system
 
 ```bash
 helm repo add p80n-distcc https://p80n.github.io/distcc-helm/
-helm install p80n-distcc/distcc
+helm repo update
+helm upgrade --install distccd --namespace distccd distccd p80n-distcc/distcc
+
 ```
 
 ## Introduction
